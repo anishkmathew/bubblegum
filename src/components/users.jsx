@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import Loader from "react-loader-spinner";
+
 
 import "../HoverButton.css";
 import { getUsers, deleteUser } from "../services/userService";
@@ -37,13 +37,13 @@ class Users extends Component {
 
   render() {
     const { users } = this.state;
-    if (this.state.loader == 1)
+    if (this.state.loader === 1)
       return (
         <div
           className="row justify-content-center"
           style={{ backgroundColor: "black" }}
         >
-          <img src="giphy.gif" />
+          <img alt="Loader" src="giphy.gif" />
         </div>
       );
     else
