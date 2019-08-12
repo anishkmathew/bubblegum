@@ -67,11 +67,10 @@ class UserForm extends Form {
     formData.append("email", this.state.data.email);
     formData.append("_method",this.state._method);
     
-    if (this.fileInput.current.files[0] !== "undefined") {
+    if (this.fileInput.current.files[0] !== undefined) {
       formData.append("photo", this.fileInput.current.files[0]);
     }
     
-
     await saveUser(formData,this.state.data.id);
 
     this.props.history.push("/users");
