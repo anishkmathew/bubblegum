@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Clone the project to your local and install the dependencies by running the command 
+
+### `npm install`
+
+inside the project directory
+
+Update the config file inside src directory to set the APIs for the application.
+
 ## Available Scripts
 
 In the project directory, you can run:
