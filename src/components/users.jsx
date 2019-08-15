@@ -5,9 +5,9 @@ import { toast } from "react-toastify";
 
 import "../HoverButton.css";
 import { getUsers, deleteUser } from "../services/userService";
-import { apiUrl } from "../config.json";
+//import { apiUrl } from "../config.json";
 
-const imgPath = apiUrl + "/img/";
+const imgPath = "/img/";
 
 class Users extends Component {
   state = {

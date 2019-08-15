@@ -2,8 +2,8 @@ import React from "react";
 import Joi from "joi-browser";
 import Form from "./common/form";
 import { getUser, saveUser } from "../services/userService";
-import { apiUrl } from "../config.json";
-const imgPath = apiUrl +"/img/";
+//import { apiUrl } from "../config.json";
+const imgPath = "/img/";
 
 class UserForm extends Form {
   constructor(props) {
